@@ -12,10 +12,12 @@ public class OtherActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_other);
-		getAll(Item item);
 	}
+	
+	sss
+	getAll(Item item);
 }
-public static List<Item> getAll(Item item){
+public static List<Item> getAll1(Item item){
 	return new Select()
 	.from(Item.class)
 	.where("Item = ?",item.getId())
