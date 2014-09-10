@@ -25,11 +25,12 @@ public class Item extends Model {
 		super();
 	}
 
-	public static List<Item> getAll1(Item item) {
-		return new Select() //
-				.from(Item.class) //
-				.where("Item = ?", item.getId()) //
-				.orderBy("Name ASC") //
-				.execute();
+	public static List<Item> getAll(Item item) {
+		return new Select()//
+				.from(Item.class)//
+				.where("Item = ?", item.getId())//
+				.orderBy("Name ASC")//
+				.execute();//
+
 	}
 }
